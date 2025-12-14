@@ -76,7 +76,7 @@ d2_points = vcat(d2_points, d2_dense)
 #Визуализация всех этапов преобразования
 
 
-p1 = plot(title="Этап 0: D₁ = ℂ \\ [0, i], Исходная область", aspect_ratio=:equal,
+p1 = plot(title="Этап 0: D₁ = ℂ ∖ [0, i], Исходная область", aspect_ratio=:equal,
           xlims=(-2.5, 2.5), ylims=(-2.5, 2.5), legend=false,
           xlabel="Re(z)", ylabel="Im(z)", grid=true, gridwidth=1)
 
@@ -89,7 +89,7 @@ annotate!(0.15, 0, text("0", :black, :left, 10))
 annotate!(0.15, 1, text("i", :black, :left, 10))
 
 #После поворота на -90 градусов
-p2 = plot(title="Этап 1: z₁ = -i·z, ℂ \\ [0, 1]", aspect_ratio=:equal,
+p2 = plot(title="Этап 1: z₁ = -i·z, ℂ ∖ [0, 1]", aspect_ratio=:equal,
           xlims=(-2.5, 2.5), ylims=(-2.5, 2.5), legend=false,
           xlabel="Re(z₁)", ylabel="Im(z₁)", grid=true, gridwidth=1)
 #Плотная сетка точек - увеличенный размер для полного покрытия
